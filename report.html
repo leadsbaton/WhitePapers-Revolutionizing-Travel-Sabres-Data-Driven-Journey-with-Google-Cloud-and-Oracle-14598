@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title> Plotting your course to future success with
-        SAP
+    <title> Revolutionizing Travel: Sabre’s Data-Driven
+        Journey with Google Cloud and Oracle
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,8 +40,8 @@
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-16">
         <section class="bg-white rounded-2xl shadow-card p-6 sm:p-10">
             <h1 class="text-2xl font-semibold mb-4">
-                Plotting your course to future success with
-                SAP
+                Revolutionizing Travel: Sabre’s Data-Driven
+                Journey with Google Cloud and Oracle
 
             </h1>
             <p class="mt-2 text-sm sm:text-base text-gray-600">
@@ -50,10 +50,10 @@
 
             <form id="contactForm" class="mt-8 grid grid-cols-1 gap-5 max-w-xl">
                 <!-- Identify this as Form 1 -->
-                <input type="hidden" name="form_name"
-                        value="Plotting your course to future success with SAP" />
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="hidden" name="form_name" value="Revolutionizing Travel: Sabre’s Data-Driven
+      Journey with Google Cloud and Oracle" />
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                     <input id="name" name="name" type="text" autocomplete="name" required
                         class="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-400" />
                     <p data-err="name" class="hidden mt-1 text-sm text-red-600"></p>
@@ -138,7 +138,7 @@
         const EMAIL_SERVICE_ID = "service_z09fuxl";
         const EMAIL_TEMPLATE_ID = "template_sgg6gwp";
 
-        const PDF_URL = "https://leadsbaton.github.io/WhitePapers-Plotting-your-course-to-future-success-with-SAP-14544/assets/pdf/Plotting-your-course-to-future-success-with-SAP.pdf";
+        const MP4_URL = "https://dzceab466r34n.cloudfront.net/DBTA/Revolutionizing-Travel--Oracle-Webinar.mp4";
 
         /* ---------------------------------------------------------
            Boot
@@ -231,13 +231,9 @@
                 showToast("Success! Your download will start now.");
                 form.classList.add('hidden');
 
-                // Direct download instead of web view
-                const link = document.createElement('a');
-                link.href = PDF_URL;
-                link.download = PDF_URL.split('/').pop() || 'Plotting-your-course-to-future-success-with-SAP.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                // 3. Open the video link in a new browser tab
+                // Use '_blank' to keep your website open, or '_self' to redirect the current page
+                window.open(MP4_URL, '_blank');
 
             } catch (err) {
                 console.error('EmailJS Error:', err);
